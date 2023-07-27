@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+  <header>
+    <a href="/">Home</a>
+  </header>
+  <h1>Consult Register</h1>
+  <hr>
+  <form action="create" method="POST">
+    <input type="text" name="name" id="name" placeholder="Nome do Paciente" class="form-control">
+    <input type="email" name="email" id="email" placeholder="email@email.com" class="form-control">
+    <input type="text" name="cpf" id="cpf" placeholder="CPF" class="form-control cpf">
+    <input type="text" name="description" id="description" placeholder="Description" class="form-control">
+    <input type="date" name="date" id="date" placeholder="12/02/2039" class="form-control">
+    <input type="time" name="time" id="time" placeholder="20:15" class="form-control">
+    <button class="btn btn-success btn-lg btn-block">Register</button>
+  </form>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<script src="jquery.mask.min.js" type="text/javascript"></script>
+<script>$('.cpf').mask('000.000.000-00')</script>
+
+</html>

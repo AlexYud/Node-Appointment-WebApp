@@ -1,0 +1,16 @@
+<h1>Appointment: <%= appo.description %>
+</h1>
+<hr>
+<h4>Patient: <%= appo.name %>
+</h4>
+<h4>Email: <%= appo.email %>
+</h4>
+<h4>CPF: <%= appo.cpf %>
+</h4>
+<hr>
+<% if (!appo.finished) { %>
+  <form action="/end" method="post">
+    <input type="hidden" name="id" value="<%= appo._id %>">
+    <button>End appointment</button>
+  </form>
+  <% } %>

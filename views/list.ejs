@@ -1,0 +1,19 @@
+<h3>Appointments: </h3>
+<hr>
+<form action="/search" method="get">
+  <input type="search" name="search" id="search" placeholder="Type email or cpf">
+  <button>Search</button>
+</form>
+<hr>
+<% appointments.forEach(appointment=> { %>
+  <h1>Appointment: <%= appointment.description %>
+  </h1>
+  <hr>
+  <h4>Patient: <%= appointment.name %>
+  </h4>
+  <h4>Email: <%= appointment.email %>
+  </h4>
+  <h4>CPF: <%= appointment.cpf %>
+  </h4>
+  <hr>
+  <% }) %>
